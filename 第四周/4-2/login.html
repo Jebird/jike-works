@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>网站后台登陆界面</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <img src="images/logo.png" />
+                <span class="line"></span>
+                <h5><strong>学业数据可视化分析系统</strong></h5>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Welcome</h1>
+            <form action="index.html" method="post">
+                <div class="form-group">
+                    <label for="username" class="sr-only">用户名</label>
+                    <input required class="form-control input-lg" type="text" id="username" placeholder="用户名" />
+                </div>
+                <div class="form-group">
+                    <label for="psw" class="sr-only">密码</label>
+                    <input required class="form-control input-lg" type="password" id="psw" placeholder="密码" />
+                </div>
+                <div class="row">
+                    <div class="col-xs-5 col-xs-offset-1 col-sm-3 col-sm-offset-3  ">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" />记住
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 col-sm-3">
+                        <span class="forget"><a href="#" style="color: #ffffff;">忘记密码?</a></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default">登录</button>
+                <button type="button" class="btn btn-default">注册</button>
+            </form>
+
+            <p class="text-center">©2015&nbsp;版权所有&nbsp;京ICP证030173号&nbsp;</p>
+        </div>
+    </div>
+</body>
+
+</html>

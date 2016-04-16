@@ -1,0 +1,227 @@
+.header {
+    height: 100px;
+    background-color: #21a2e6;
+}
+
+.line {
+    height: 23px;
+    margin-top: 5px;
+    float: left;
+    margin-left: 20px;
+    width: 0px;
+    border: 2px solid #ffffff;
+}
+
+h4 {
+    line-height: 16px;
+    float: left;
+}
+
+h4,
+.user_set,
+.sys_set,
+.user_off,
+.glyphicon {
+    color: #ffffff;
+}
+
+.user_set,
+.sys_set,
+.user_off,
+.glyphicon {
+    font-size: 15px;
+}
+
+.user_set a,
+.sys_set a,
+.user_off a {
+    color: #ffffff;
+}
+
+a:link {
+    color: #ffffff;
+}
+
+.user_set,
+.sys_set {
+    padding-right: 10px;
+}
+
+.user {
+    float: right;
+    width: 410px;
+    height: 30px;
+    margin-top: -40px;
+}
+
+.sub {
+    padding-bottom: 248px;
+    margin-bottom: -248px;
+}
+
+.sub {
+    padding-right: 0;
+    background-color: #353e47;
+}
+
+.nav ul li {
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav ul li a {
+    color: #ffffff;
+}
+
+.divider {
+    color: #ffffff;
+}
+
+.caret {
+    color: #ffffff;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.nav-list li {
+    font-size: 16px !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-list li a:hover {
+    background-color: #ffb142;
+}
+
+.btnmenu {
+    width: 45px !important;
+    background-color: #21a2e6;
+}
+
+.glyphicon-menu-hamburger {
+    font-size: 20px;
+}
+
+.dropdown-menu li {
+    padding-top: 8px;
+}
+
+.dropdown-menu .divider {
+    padding-top: 0px;
+}
+
+.dropdown-menu li,
+.dropdown-menu {
+    background-color: #21a2e6;
+}
+
+.dropdown-menu .divider {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.main {
+    background-color: #fafafa;
+}
+
+.textone {
+    font-size: 18px;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.first-form {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.second-form {
+    padding-right: 20px;
+}
+
+label {
+    color: #b4b4b4;
+}
+
+.btn {
+    width: 100px;
+    float: right;
+    margin-right: 20px;
+}
+
+.bottom-line {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.main-table {
+    width: 100%;
+    margin: 10px auto;
+    overflow-x:auto;/*小屏幕时在X轴滚动*/
+}
+
+.table {
+    width: 94%;
+    margin: 0 auto;
+    color: #818181;
+    text-align: center;
+}
+
+thead {
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+tbody td {
+    vertical-align: middle !important;
+}
+
+.progress {
+    margin-top: 15px;
+}
+
+td .glyphicon {
+    display: inline-block;
+    font-size: 20px;
+    color: #1e92ff;
+}
+
+tr .col-long {
+    width: 110px;
+    font-size: 14px;
+}
+
+nav .pagination {
+    margin-left: 10%;
+}
+
+.footer {
+    background-color: #dddddd;
+    height: 40px;
+    border: 1px solid #eee;
+}
+
+.texttwo,
+.texthree {
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.texttwo {
+    float: left;
+    padding-left: 20px;
+}
+
+.texthree {
+    float: right;
+    padding-right: 20px;
+}

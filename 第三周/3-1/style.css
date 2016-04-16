@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    perspective-origin: 50% 50%;
+    margin-left: 500px;
+    margin-top: 400px;
+}
+
+.cube {
+    position: relative;
+    width: 200px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: rotate 15s infinite ease-in-out;
+    -moz-animation: rotate 15s infinite ease-in-out;
+    animation: rotate 15s infinite ease-in-out;
+}
+
+
+/*旋转动画*/
+
+/*@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        -webkit-transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+        -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    }
+    75% {
+        -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    0% {
+        -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        -moz-transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+        -moz-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+    }
+    75% {
+        -moz-transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+    }
+    100% {
+        -moz-transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+    }
+}*/
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+    }
+    75% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+.cube div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.front div,
+.back div,
+.top div,
+.bottom div,
+.left div,
+.right div {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 2px solid white;
+}
+
+
+/*魔方背面*/
+
+.back {
+    background-color: rgba(248,252,157,.3);
+    transform: translateZ(-100px) rotateY(180deg);
+    -webkit-transform: translateZ(-100px) rotateY(180deg);
+}
+
+
+/*魔方右面*/
+
+.right {
+    background-color: rgba(199,237,233,.3);
+    transform: rotateY(-270deg) translateX(100px);
+    -webkit-transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+}
+
+
+/*魔方左面*/
+
+.left {
+    background-color: rgba(255,150,128,.3);
+    transform: rotateY(270deg) translateX(-100px);
+    -webkit-transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+}
+
+
+/*魔上背面*/
+
+.top {
+    background-color: rgba(174,221,129,.3);
+    transform: rotateX(-90deg) translateY(-100px);
+    -webkit-transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top center;
+}
+
+
+/*魔方下面*/
+
+.bottom {
+    background-color: rgba(147,224,255,.3);
+    transform: rotateX(90deg) translateY(100px);
+    -webkit-transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom center;
+}
+
+
+/*魔方前面*/
+
+.front {
+    background-color: rgba(255,66,93,.3);
+    transform: translateZ(100px);
+    -webkit-transform: translateZ(100px);
+}
+
+
+/* 向右第一行 */
+
+.right1 {
+    left: 50px;
+}
+
+
+/* 向右第二行 */
+
+.right2 {
+    left: 100px;
+}
+
+
+/* 向右第三行 */
+
+.right3 {
+    left: 150px;
+}
+
+
+/* 向下第一行 */
+
+.up1 {
+    top: 50px;
+}
+
+
+/* 向下第二行 */
+
+.up2 {
+    top: 100px;
+}
+
+
+/* 向下第三行 */
+
+.up3 {
+    top: 150px;
+}

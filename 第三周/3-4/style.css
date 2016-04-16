@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 15px/1.5 Georgia, sans-serif;
+}
+
+.container {
+    min-width: 800px;
+}
+
+.title {
+    height: 50px;
+    background-color:#999999;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    height: 80px;
+    margin-top: 20px;
+  line-height: 80px;
+    background-color: #93e0ff;
+    text-align: center;
+    color: white;
+}
+
+
+.content {
+    overflow: hidden;
+    min-width: 600px;
+}
+
+.content1 {
+    overflow: hidden;
+    padding-left: 200px;
+    padding-right: 200px;
+    min-width: 600px;
+}
+
+.main {
+    background-color: #fcaebb;
+    float: left;
+    width: 100%;
+}
+
+
+/*双飞翼布局*/
+
+.main-warp {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+/*三列等高*/
+
+.main,
+.sub,
+.extra， .sub,
+.extra {
+    padding-bottom: 500px;
+    margin-bottom: -500px;
+}
+pre {
+    white-space: pre-line;
+    margin: 1em 0px;
+}
+
+.sub {
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    background-color: #c7ede9;
+}
+
+
+/*圣杯布局*/
+
+.sub1 {
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    position: relative;
+    left: -200px;
+    background-color: #c7ede9;
+}
+
+.extra {
+    background-color: #afd7ed;
+    width: 200px;
+    float: left;
+    margin-left: -200px;
+}
+
+
+/*圣杯布局*/
+
+.extra1 {
+    background-color: #afd7ed;
+    width: 200px;
+    float: left;
+    margin-left: -200px;
+    position: relative;
+    right: -200px;
+}
+
+.footer {
+    height: 50px;
+    margin-bottom:300px;
+    background-color: #f8e889;
+    text-align: center;
+    color: white;
+}

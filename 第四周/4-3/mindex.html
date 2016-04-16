@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=divice-width,initial-scale=1"/>
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="mindex.css"/>
+</head>
+<body>
+<!--手机页面容器-->
+<div class="page">
+    <!--卡片式页面布局-->
+    <div id="index-card">
+        <!--页面头部-->
+        <div id="head">
+            <!--天气与用户-->
+            <div class="head-wrap">
+                <div id="weather">
+                    <div class="weather-outline">
+                        <div class="icon-weather-default"></div>
+                        <div class="weather-num">6°</div>
+                        <div class="weather-status">
+                            <p>南充</p>
+                            <p>空气93 <i class="icon-down"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="user" class="icon-user">
+
+                </a>
+            </div>
+
+            <!--LOGO-->
+            <div class="logo">
+                <img src="images/u.png" width="175" height="55" alt="百度一下你就知道"/>
+            </div>
+            <!--搜索框-->
+            <form class="search-form" action="" method="get">
+                <div class="inputword">
+                    <input type="text" name="word" maxlength="64" size="17" class="word">
+                </div>
+                <button type="submit" class="btn" style="height: 42px;">百度一下</button>
+
+            </form>
+            <!--卡片式导航-->
+            <div class="navs">
+                <a href="#">
+                    <i class="icon-news"></i>
+                    新闻
+                </a>
+                <a href="#">
+                    <i class="icon-novel"></i>
+                    小说
+                </a>
+                <a href="#">
+                    <i class="icon-video"></i>
+                    视频
+                </a>
+                <a href="#">
+                    <i class="icon-life"></i>
+                    糯米
+                </a>
+                <a href="#">
+                    <i class="icon-map"></i>
+                    地图
+                </a>
+                <a href="#">
+                    <i class="icon-more"></i>
+                    更多
+                </a>
+
+
+            </div>
+        </div>
+
+        <!--卡片式布局-->
+        <div id="plus-card">
+            <div class="plus">
+                <div class="card-title">
+                    <div class="normal-title">
+                       <!-- <i class="icon-nav"></i>-->
+                        <h2>常用网址</h2>
+                        <a class="plus-edit">
+                            <i class="icon-edit"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="plus-content" id="nav-list">
+                    <a href="#">
+                        <span>hao123</span>
+                    </a>
+                    <a href="#">
+                        <span>图片</span>
+                    </a>
+                    <a href="#">
+                        <span>新浪</span>
+                    </a>
+                    <a href="#">
+                        <span>凤凰网</span>
+                    </a>
+                    <a href="#">
+                        <span>淘宝</span>
+                    </a>
+                    <a href="#">
+                        <span>腾讯</span>
+                    </a>
+                    <a href="#">
+                        <span>爱奇艺</span>
+                    </a>
+                    <a class="icon-add edit-add" href="#"></a>
+                </div>
+            </div>
+            <div id="hot-word" class="plus-hot">
+                <div class="card-title">
+                    <div class="normal-title">
+                        <!-- <i class="icon-nav"></i>-->
+                        <h2>实时热点</h2>
+                        <span class="refresh">
+                            换一批
+                            <i class="icon-refresh"></i>
+                        </span>
+                        <a class="plus-edit">
+                            <i class="icon-edit"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <ul class="plus-content" id="hot-list">
+                    <li><a href="#" class="hot">代姐结婚假戏真做</a></li>
+                    <li><a href="#" class="hot">骑士复仇马刺</a></li>
+                    <li><a href="#" class="hot">女子地铁剪脚趾甲</a></li>
+                    <li><a href="#">心疼春运吉祥物</a></li>
+                    <li><a href="#">车主报警称车被偷</a></li>
+                    <li><a href="#">胡歌许茹芸现身</a></li>
+                </ul>
+                <div class="hot-search">
+                    <a href="#">
+                        百度风云榜
+                        <i class="icon-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="hot-news" class="plus">
+                <div class="card-title">
+                    <div class="normal-title">
+                        <!-- <i class="icon-nav"></i>-->
+                        <h2>百度推荐</h2>
+                        <span class="refresh">
+                            换一批
+                            <i class="icon-refresh"></i>
+                        </span>
+                        <a class="plus-edit">
+                            <i class="icon-edit"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="plus-content">
+                    <ul id="new-content" class="news-inner">
+                        <li><a href="#">
+                            <img class="img-ex" src="images/img.jpg"/>
+                            <span class="img-out">
+                                <span class="img-title">勇士内线左膝伤势不确定 恐将暂时无限期休战</span>
+                                <span class="img-time">08:58</span>
+                            </span>
+                        </a></li>
+                        <li><a href="#" class="hot">
+                            <span class="news-title">台新一届"立委"1日就职 王金平挥别17年"院长"头衔</span>
+                            <span class="img-time">09:27</span>
+                        </a></li>
+                        <li><a href="#" class="hot">
+                            <span class="news-title">调查称全球最危险50座城市八成集中在拉美地区</span>
+                            <span class="img-time">09:21</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="news-title">官媒评美舰闯西沙:航行自由外衣下的霸权</span>
+                            <span class="img-time">09:12</span>
+                        </a></li>
+
+                    </ul>
+
+                </div>
+                <div class="more-link">
+                    <a href="#" class="see-more">
+                        查看更多推荐
+                        <i class="icon-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="lbs" class="plus">
+                <div class="card-title">
+                    <div class="normal-title">
+                        <!-- <i class="icon-nav"></i>-->
+                        <h2>生活服务</h2>
+                        <a class="plus-edit">
+                            <i class="icon-edit"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="plus-content">
+                    <div class="gps">
+                        <div class="gps-info">
+                            <p>点击定位，查看附近位置信息</p>
+                        </div>
+                        <button>定位</button>
+                        <span>
+                            <i class="icon-gps"></i>
+                        </span>
+                    </div>
+                    <ul id="lbs-list">
+                        <li>
+                            <a href="#">
+                                <div class="icon-film"></div>
+                                <p>电影</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon-group"></div>
+                                <p>团购</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon-out"></div>
+                                <p>外卖</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon-taxi"></div>
+                                <p>打车</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon-hotel"></div>
+                                <p>酒店</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon-delicacy"></div>
+                                <p>美食</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon-KTV"></div>
+                                <p>KTV</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon-bank"></div>
+                                <p>银行</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="plus-control">
+                    <span class="show-all">展示全部</span>
+                    <i class="icon-arrow"></i>
+                </div>
+            </div>
+            <div id="manage" class="plus">
+                管理我的卡片
+            </div>
+
+
+        </div>
+        <!--页面底部-->
+        <div id="bottom">
+            <ul class="bottom-list">
+                <li class="bd-browser">
+                    <a href="#">百度浏览器，上网提速200%</a>
+                </li>
+                <li class="bd-mobile">
+                    <a href="#">手机百度，最省流量的极速搜索APP</a>
+                </li>
+                <li class="bd-spread">
+                    <a href="#">百度推广，让有需求的客户找到你</a>
+                </li>
+
+            </ul>
+        </div>
+        <div id="foot">
+            <div>
+                <a href="#">
+                    <span class="icon-userback"></span>
+                    用户反馈
+                </a>
+            </div>
+            <a href="#" id="copyright">使用百度前必读 &nbsp;Baidu &nbsp;京ICP证030173号</a>
+        </div>
+
+
+
+    </div>
+</div>
+
+</body>
+</html>

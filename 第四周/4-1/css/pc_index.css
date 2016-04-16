@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Microsoft YaHei";
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-width: 1500px;
+}
+header{
+    background-color: #01708b;
+    color: #fff;
+    line-height: 30px;
+}
+.headtext{
+    margin-left: 20%;
+}
+.set_icon{
+    float: right;
+    margin-right: 20%;
+}
+/*头部图标雪碧图实现*/
+.home_icon,.user_icon,.info_icon{
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(90,162,179,0.7);
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: rgba(90,162,179,0.7);
+    background-image: url(../images/sprite1.png);
+    background-repeat: no-repeat;
+}
+.home_icon{
+    background-position:3px 1px;
+}
+.user_icon{
+    background-position:-15px 1px;
+}
+.info_icon{
+    background-position:-33px 1px;
+}
+nav{
+    height: 60px;
+    background-color: #019abf;
+}
+.logo{
+    padding-left: 20%;
+    display: inline-block;
+}
+.logo img{
+    padding-top: 10px;
+}
+.menu{
+    float: right;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+.menu_nav li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    list-style: none;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    padding-left:20px;
+    padding-right:20px;
+    color: #ffffff;
+}
+.menu_nav li a:link{
+    color: #ffffff;
+}
+.menu_nav li a:hover{
+    background-color:#0185a5;
+}
+.menu_nav .active{
+    background-color:#0185a5;
+}
+.main{
+    background-image: url(../images/bg3.png);
+    height: 450px;
+}
+.text_01{
+    margin-top: 100px;
+    margin-left:20%;
+}
+.text_02{
+    float: right;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+.text_03{
+    padding-top: 25px;
+    margin-left: 30%;
+}
+.text_04{
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 20%;
+    padding-top: 22px;
+}
+/*轮播按钮*/
+button{
+    width: 157px;
+    height: 33px;
+    background-color: transparent;
+    color: #ffffff;
+    display: block;
+    border: 1px solid #b2bcc1;
+    font-size: 16px;
+}
+.buttons {
+    margin: 0 auto;
+    height: 10px;
+    width: 100px;
+    z-index: 2;
+    bottom: 20px;
+    left: 250px;
+}
+.buttons span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid #fff;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin-right: 10px;}
+.buttons .on {
+    background: #2d949b;
+}
+.btn{
+    width: 155px;
+    height: 33px;
+    line-height: 33px;
+    background-color: transparent;
+    margin-left: 33%;
+    margin-top: 54px;
+    cursor: pointer;
+    border: 1px solid #aeb7ba;
+    text-align: center;
+}
+.btn a{
+    color: #ffffff;
+    font-size: 18px;
+
+}
+.main_nav{
+    height: 146px;
+    margin-top: 34px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+}
+.main_nav a .pre{
+    display: inline-block;
+    padding-left: 20%;
+}
+
+.serve{
+    width: 192px;
+    height: 146px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    background-color: #20b3e7;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: -30px;
+}.serve p{
+    padding-top: 19px;
+ }
+.serve_texttop{
+    font-size: 16px;
+}
+.serve_textdown{
+    font-size: 14px;
+}
+.box{
+    height: 146px;
+    margin-left: 192px;
+    display: inline-block;
+}
+.box_content{
+    width: 200px;
+    height: 146px;
+    position: relative;
+    border-right: 2px dashed #e4e4e4;
+    float: left;
+    display: inline-block;
+
+}
+.box_inner{
+    width: 56px;
+    height: 56px;
+    background-color: #00BCD4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -28px 0 0 -28px;
+    background: url(../images/sprite.png) no-repeat;
+}
+.sprite1{
+    background-position:-56px 0;
+}
+.sprite2{
+    background-position:-112px 0;
+}
+.box_top,.box_down{
+    text-align: center;
+}
+.box_top{
+    font-size: 16px;
+    padding-top: 22px;
+    display: block;
+}
+.box_down{
+    font-size: 14px;
+    display: block;
+    padding-top: 77px;
+}
+.no_border{
+    border: 0;
+}
+.main_example{
+    height: 300px;
+    margin-top: 40px;
+}
+h1,h4{
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    color: #00b7ff;
+}
+h4{
+    color: #9f9f9f;
+    padding-top: 20px;
+}
+.example_list{
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.example_list img{
+    padding-left: 8px;
+}
+.more{
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.seemore{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -35px;
+}
+.main_foot{
+    height: 200px;
+    margin-top: 68px;
+}
+.news{
+    float: left;
+    margin-left: 18%;
+    width: 484px;
+    height: 200px;
+    background: url(../images/img_49.png) no-repeat;
+}
+.about{
+    float: right;
+    margin-right: 18%;
+    width: 470px;
+    height: 200px;
+    background: url(../images/img_52.png) no-repeat;
+}
+.news_list{
+    width: 233px;
+    float: right;
+}
+.news_list ul{
+    list-style-image: url(../images/sharp1.png);
+}
+.news_list ul li{
+    padding-bottom: 20px;
+}
+.news_list ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+.news_button,.about_button{
+    width: 107px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.news_button{
+    background-color: #727fc3;
+}
+.about_content{
+    float: right;
+}
+.aboutus{
+    text-align: left;
+    font-size: 15px;
+    width: 233px;
+    text-indent: 2em;
+}
+.about_button{
+    margin-top: 10px;
+    background-color: #379e19;
+}
+.foot_menu{
+    height: 50px;
+    background-color: #656565;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 33px;
+    text-align: center;
+}
+.foot_list{
+    padding-right: 17px;
+    line-height: 50px;
+}
+.foot_list a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.foot_inner{
+    height: 100px;
+    font-size: 14px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    text-align: center;
+}
+.foot_one,.foot_two{
+    display: inline-block;
+    height: 32px;
+    padding-top: 17px;
+    text-align: center;
+}
+.one_content{
+    padding-right: 20px;
+}
+.wb{
+    float: right;
+    margin-right: 20%;
+}
+.weibo{
+    padding-top: 17px;
+}
+.wbtxt{
+    display: block;
+    padding-top: 5px;
+    font-size: 12px;
+}
+.webtxt1{
+    padding-right: 14px;
+}
+

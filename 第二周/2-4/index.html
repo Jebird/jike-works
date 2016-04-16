@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>盒子模型与弹性盒模型实战</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<body>
+    <!--主体运用column分栏-->
+    <div class="box">
+        <!--标准盒子模型与怪异盒子模型对比-->
+        <div class="text">1、标准盒子</div>
+        <div class="boxmode">
+            <!--标准盒子模型-->
+            <div class="normalmargin">
+                <div class="normalbox">
+                    <div class="normalpadding">
+                        标准盒
+                    </div>
+                </div>
+            </div>
+            <!--怪异盒子模型-->
+            <div class="text">2、怪异盒子</div>
+            <div class="container">
+                <div class="oddbox">
+                    <div class="content">
+                        怪异盒
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--弹性盒子模型水平垂直排序布局-->
+        <div class="boxmode">
+            <!--水平分栏-->
+            <div class="text">3、水平分栏布局</div>
+            <div class="flexbox1">
+                <div class="box1">1</div>
+                <div class="box2">2</div>
+                <div class="box3">3</div>
+            </div>
+            <!--垂直分栏-->
+            <div class="text">4、垂直分栏布局</div>
+            <div class="flexbox2">
+                <div class="box4">4</div>
+                <div class="box5">5</div>
+                <div class="box6">6</div>
+            </div>
+            <!--flex排序-->
+            <div class="text">5、flex排序</div>
+            <div class="flexbox3">
+                <div class="box7">1</div>
+                <div class="box8">2</div>
+                <div class="box9">3</div>
+            </div>
+        </div>
+        <!--旧版盒子居中布局-->
+        <div class="boxmode">
+            <div class="text">6、旧版盒子居中布局</div>
+            <div class="imgcenter">
+                <img src="icon.png" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

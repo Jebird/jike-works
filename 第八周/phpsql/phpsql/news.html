@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新闻后台管理系统</title>
+</head>
+<link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="Stylesheets/news.css">
+
+<body>
+    <div class="container col-sm-12">
+        <div class="header">
+            <div class="user col-sm-2">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <span>Admin</span>
+            </div>
+            <h2 class="col-sm-9">新闻后台发布系统</h2>
+        </div>
+        <!-- 侧边栏菜单 -->
+        <div class="side col-sm-1">
+            <div class="menu">
+                <div class="menu-manage">新闻管理</div>
+                <div class="menu-list newslist" data-val="1" >新闻列表</div>
+                <div class="menu-list current" data-val="2">增加新闻</div>
+                <div class="menu-list" data-val="3">查询新闻</div>
+            </div>
+        </div>
+        <!-- 显示区 -->
+        <div class="main col-sm-11">
+            <!-- 新闻列表 -->
+            <div class="show-news" id="menu1" style="display: none;">
+                <!-- <div class="page-list-item">
+                    <div class="page-list-main">
+                        <div class="page-list-img">
+                            <img src="Images/newlist02.JPEG&fm=36">
+                        </div>
+                        <div class="page-list-text">
+                            <div class="list-text-title">再度回应制裁?朝鲜今晨向东部海域试射2枚导弹</div>
+                            <div class="list-text-abs">当地时间周四上午10点左右，朝鲜从其东海岸向海上发射了数枚短程导弹。</div>
+                        </div>
+                        <div class="page-list-bottom">
+                            <div class="page-list-time">
+                                <b class="list-new-time">2016-03-06</b>
+                                <b class="update btn">修改</b>
+                                <b class="delete btn">删除</b>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- 增加新闻 -->
+            <div class="add-news" id="menu2">
+                <form id="addData" class="form-horizontal" action="addnews.php" method="post">
+                    <div class="form-group">
+                        <label for="newskind" class="col-sm-2 control-label">新闻类别:</label>
+                        <div class="col-sm-2">
+                            <select class="form-control" id="newskind" name="newskind">
+                                <option value="type1">推荐</option>
+                                <option value="type2">百家</option>
+                                <option value="type3">本地</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newstitle" class="col-sm-2 control-label">新闻标题:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control " name="newstitle" id="newstitle">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newsimg" class="col-sm-2 control-label">图片地址:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="newsimg" id="newsimg">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newscontent" class="col-sm-2 control-label">新闻内容:</label>
+                        <div class="col-sm-10">
+                            <textarea type="text" rows="3" class="form-control" name="newscontent" id="newscontent"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newstime" class="col-sm-2 control-label">新闻时间:</label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control" name="newstime" id="newstime">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-1">
+                            <input class="btn btn-success" type="submit" value="提交">
+                        </div>
+                        <div class="col-sm-2">
+                            <input class="btn btn-danger" type="reset" value="重置">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--查询新闻-->
+            <div class="select-news" id="menu3"  style="display: none;">
+                <span class="select-text col-sm-12">请选择查找条件:</span>
+                <form id="submitData" class="select" method="post">
+                    <div class="form-group">
+                        <label for="newskind" class="col-sm-2 select-word control-label">新闻类别:</label>
+                        <div class="col-sm-2">
+                            <select class="form-control" id="newskind" name="newskind">
+                                <option value="type1">推荐</option>
+                                <option value="type2">百家</option>
+                                <option value="type3">本地</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-1">
+                            <input class="btn btn-success" type="submit" value="提交">
+                        </div>
+                    </div>
+                </form>
+                <div class="select-result">
+                </div>
+            </div>
+            <!--弹出修改新闻窗口-->
+            <div class="mask">
+                <div class="update-news">
+                    <div class="update-title">关闭</div>
+                    <div class="update-content">
+                        <form id="updateData" class="form-horizontal" action="updatenews.php" method="post">
+                            <div class="form-group">
+                                <label for="newsid" class="col-sm-2 control-label">新闻ID:</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control " name="newsid" id="updateid">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newskind" class="col-sm-2 control-label">新闻类别:</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control" id="updatekind" name="newskind">
+                                        <option value="type1">推荐</option>
+                                        <option value="type2">百家</option>
+                                        <option value="type3">本地</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newstitle" class="col-sm-2 control-label">新闻标题:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control " name="newstitle" id="updatetitle">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newsimg" class="col-sm-2 control-label">图片地址:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="newsimg" id="updateimg">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newscontent" class="col-sm-2 control-label">新闻内容:</label>
+                                <div class="col-sm-10">
+                                    <textarea type="text" rows="3" class="form-control" name="newscontent" id="updatecontent"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newstime" class="col-sm-2 control-label">新闻时间:</label>
+                                <div class="col-sm-5">
+                                    <input type="date" class="form-control" name="newstime" id="updatetime">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-1">
+                                    <input class="btn btn-success" type="submit" value="提交">
+                                </div>
+                                <div class="col-sm-2">
+                                    <input class="btn btn-danger" type="reset" value="重置">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="Scripts/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="Scripts/jquery.form.js"></script>
+<script type="text/javascript" src="Scripts/news.js"></script>
+
+</html>

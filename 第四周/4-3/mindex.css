@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+    background: #eeeff0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*页面图标由CSS @fontface完成*/
+@font-face {
+    font-family: icons;
+    src: url(Fonts/iconfont.woff);
+}
+
+/*头部样式*/
+#head {
+    padding-bottom: 10px;
+}
+
+.head-wrap {
+    position: relative;
+    height: 54px;
+}
+
+.icon-user:before {
+    content: '\e809';
+    color: #666;
+    font: 24px/1 icons;
+}
+
+#user {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    padding: 8px;
+    color: #9b9b9b;
+    font-size: 28px;
+    line-height: 20px;
+}
+
+#index-card [class^="icon-"], #index-card [class*=" icon-"], #index-view [class^="icon-"], #index-view [class*=" icon-"] {
+    font-family: icons;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+}
+
+#index-card {
+    position: relative;
+    height: inherit;
+}
+
+#weather {
+    position: relative;
+    height: 0;
+    text-align: left;
+}
+
+.weather-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 6px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.icon-weather-default {
+    color: #b7babe;
+    font-size: 28px;
+    position: relative;
+    top: 3px;
+    width: auto;
+    line-height: 35px;
+    margin-left: -1px;
+}
+
+.weather-outline > * {
+    display: inline-block;
+}
+
+.weather-num {
+    font-size: 20px;
+    color: #8c8c8c;
+    padding-left: 2px;
+}
+
+.weather-status {
+    position: relative;
+    padding: 0 2px 0 7px;
+    top: 3px;
+}
+
+.weather-status p {
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #999;
+}
+
+.icon-down {
+    vertical-align: bottom;
+    height: 34px;
+}
+
+#weather .icon-down:before {
+    font-size: 20px;
+    content: '\e814';
+    color: #b6b7ba;
+    font: 17px/1 icons;
+}
+
+/*LOGO与搜索框样式*/
+.logo {
+    height: 55px;
+    padding: 17px 0 15px;
+}
+
+.search-form {
+    position: relative;
+    margin: 0 10px;
+    height: 42px;
+    background-color: #ffffff;
+}
+
+.inputword {
+    margin-right: 96px;
+    height: 42px;
+}
+
+.word {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 18px;
+    height: 27px;
+    padding: 6px;
+    width: 100%;
+}
+
+.btn {
+    width: 82px;
+    height: 42px;
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    color: #ffffff;
+    background-color: #38f;
+    border: 1px solid #38f;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+.navs {
+    margin: 17px 0 14px;
+    overflow: hidden;
+}
+
+.navs a {
+    float: left;
+    width: 16%;
+    font-size: 12px;
+    color: #666;
+}
+
+.navs a i {
+    display: block;
+    margin-bottom: 4px;
+    height: 24px;
+}
+
+.icon-news:before {
+    content: '\e799';
+    color: #666666;
+    font: 24px/1 icons;
+}
+
+.icon-novel:before {
+    content: '\e801';
+    color: #666666;
+    font: 24px/1 icons;
+}
+
+.icon-video:before {
+    content: '\e802';
+    color: #666666;
+    font: 24px/1 icons;
+}
+
+.icon-life:before {
+    content: '\e831';
+    color: #666666;
+    font: 24px/1 icons;
+}
+
+.icon-map:before {
+    content: '\e804';
+    color: #666666;
+    font: 24px/1 icons;
+}
+
+.icon-more:before {
+    content: '\e812';
+    color: #666666;
+    font: 24px/1 icons;
+}
+
+.navs a:first-child, .navs a:nth-child(7) {
+    margin-left: 2%;
+}
+
+.plus-card {
+    position: relative;
+    padding: 0 8px 10px;
+}
+
+.plus {
+    margin: 8px 8px 10px;
+    background-color: #ffffff;
+}
+
+.card-title {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.normal-title {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.normal-title {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.card-title h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.plus-edit {
+    position: absolute;
+    right: -12px;
+    top: 0;
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.icon-edit:before {
+    content: '\e650';
+    color: #b6b7ba;
+    font: 20px/34px icons;
+}
+
+.icon-nav:before {
+    content: '\e609';
+    color: #b6b7ba;
+    font: 20px/34px icons;
+}
+
+.plus-content {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.plus-content a {
+    color: #262626;
+}
+
+#nav-list a {
+    float: left;
+    display: block;
+    position: relative;
+    padding: 0px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+    color: #262626;
+}
+
+#nav-list a span {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 0 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#index-card .icon-add {
+    font-size: 24px;
+    color: #b6b7ba;
+}
+
+.plus-hot {
+    margin: 8px 8px 10px;
+    background-color: #ffffff;
+}
+
+#hot-word .refresh, #hot-news .refresh {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+}
+
+#hot-word .icon-refresh {
+    position: absolute;
+    top: 2px;
+    left: -2px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.icon-refresh:before {
+    content: '\e60d';
+    color: #b6b7ba;
+    font: 18px/34px icons;
+}
+
+#hot-list {
+    padding: 0 14px;
+    text-align: left;
+}
+
+#hot-list li {
+    display: inline-block;
+    width: 50%;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: top;
+    float: left;
+}
+
+#hot-list .hot {
+    display: inline-block;
+    position: relative;
+    padding-right: 17px;
+    vertical-align: top;
+}
+
+#hot-list .hot:after {
+    position: absolute;
+    top: 2px;
+    right: -1px;
+    content: '\e653';
+    font: 20px/1 icons;
+    color: #fb4343;
+    -webkit-font-smoothing: antialiased;
+}
+
+#hot-word .hot-search {
+    line-height: 42px;
+    text-align: right;
+    border-top: 1px solid #f4f5f6;
+}
+
+#hot-word .hot-search a {
+    display: inline-block;
+    padding-right: 14px;
+    font-size: 14px;
+    color: #0058d2;
+}
+
+.icon-right:before {
+    content: '\e62f';
+    font: 13px/1 icons;
+    color: #0058d2;
+}
+
+#new-content {
+    padding: 13px 12px 0 12px;
+    text-align: left;
+}
+
+#new-content li {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 2px;
+}
+
+#new-content li:first-child {
+    padding-bottom: 6px;
+    border: 1px solid #f7f6f6;
+}
+
+#new-content a {
+    display: block;
+    position: relative;
+    height: 41px;
+}
+
+#new-content li:first-child a {
+    display: table;
+}
+
+.img-ex {
+    width: 83px;
+    height: 50px;
+}
+
+.img-out {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.img-title {
+    left: 83px;
+    padding-left: 10px;
+    font-size: 15px;
+    overflow: hidden;
+    line-height: 17px;
+}
+
+#new-content li:first-child .img-time {
+    position: absolute;
+    bottom: 0;
+    left: 94px;
+}
+
+.news-title {
+    display: inline-block;
+    max-width: 85%;
+    line-height: 41px;
+    overflow: hidden;
+}
+
+.img-time {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #999;
+    line-height: 41px;
+}
+
+.more-link {
+    line-height: 41px;
+    margin-right: 14px;
+}
+
+.see-more {
+    display: block;
+    position: relative;
+    padding-right: 14px;
+    text-align: right;
+    font-size: 14px;
+    color: #0058d2;
+}
+
+.gps {
+    position: relative;
+    margin: 8px 14px 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #262626;
+}
+
+.gps-info {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 32px;
+    overflow: hidden;
+}
+
+#lbs button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #d2d6dd;
+    border-radius: 2px;
+    text-indent: 20px;
+    font-size: 14px;
+    background: transparent;
+}
+
+#lbs .icon-gps:before {
+    content: '\e60a';
+    font: 20px/20px icons;
+    color: #919498;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#lbs .gps span {
+    position: absolute;
+    top: 6px;
+    right: 43px;
+    width: 20px;
+    height: 20px;
+}
+
+#lbs-list {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+#lbs-list li {
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+}
+
+#lbs-list a {
+    padding: 0 10px;
+    color: #262626;
+    display: inline-block;
+}
+
+#lbs-list div {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    margin: 0 auto;
+}
+
+#lbs-list p {
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 3px 0 8px;
+}
+
+#lbs-list [class^="icon-"]:before {
+    font-size: 26px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.icon-film {
+    background-color: #b493db;
+}
+
+.icon-group {
+    background-color: #ff6fbf;
+}
+
+.icon-out {
+    background-color: #ff6b70;
+}
+
+.icon-taxi {
+    background-color: #93a4b3;
+}
+
+.icon-hotel {
+    background-color: #6f99de;
+}
+
+.icon-delicacy {
+    background-color: #ffa868;
+}
+
+.icon-KTV {
+    background-color: #b493db;
+}
+
+.icon-bank {
+    background-color: #70d0a1;
+}
+
+.icon-film:before {
+    content: '\e786';
+}
+
+.icon-group:before {
+    content: '\e78f';
+}
+
+.icon-out:before {
+    content: '\e792';
+}
+
+.icon-taxi:before {
+    content: '\e785';
+}
+
+.icon-hotel:before {
+    content: '\e78a';
+}
+
+.icon-delicacy:before {
+    content: '\e78d';
+}
+
+.icon-KTV:before {
+    content: '\e784';
+}
+
+.icon-bank:before {
+    content: '\e793';
+}
+
+.plus-control {
+    margin-top: 4px;
+    height: 47px;
+    line-height: 47px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 16px;
+    color: #262626;
+}
+
+.icon-arrow {
+    display: inline-block;
+}
+
+.icon-arrow:before {
+    content: '\e612';
+    color: #b6b7ba;
+    padding: 0 6px;
+}
+
+#manage {
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    color: #333;
+    font-size: 14px;
+    text-indent: -8px;
+}
+
+.bottom-list {
+    margin: 0 28px;
+}
+
+.bottom-list li {
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+}
+
+.bottom-list a {
+    height: 33px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-left: 21px;
+    font-size: 13px;
+    color: #555;
+    background: none no-repeat 0 center;
+}
+
+.bd-browser a:after, .bd-spread a:after {
+    content: '\e626';
+    position: absolute;
+    top: 6px;
+    left: -3px;
+    font: 21px/1 icons;
+    color: #ed5353;
+}
+
+.bd-mobile a {
+    background-image: url(//m.baidu.com/static/index/icon/w_icon2.png);
+    -webkit-background-size: 15px 15px;
+}
+
+#foot {
+    margin: 10px 28px 0;
+}
+
+#foot div {
+    overflow: hidden;
+    text-align: center;
+}
+
+#foot div a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #666;
+    font-size: 13px;
+}
+
+.icon-userback {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(images/foot-icon.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+#copyright {
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 16px;
+    color: #999999;
+}
+
+
