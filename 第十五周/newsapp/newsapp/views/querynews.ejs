@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询新闻</title>
+    
+</head>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/news.css">
+<script type="text/javascript" src="/javascripts/ejs_0.9_alpha_1_production.js"></script>
+
+
+<body>
+    <div class="container col-sm-12">
+        <div class="header">
+            <div class="user col-sm-2">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <span>Admin</span>
+            </div>
+            <h2 class="col-sm-8">新闻后台发布系统</h2>
+            <div class="col-sm-2 newslink">
+            <a href="home">进入百度新闻</a>
+            </div>
+        </div>
+		<div class="side col-sm-1">
+            <div class="menu">
+                <div class="menu-manage">新闻管理</div>
+                <a class="menu-list" href="queryAll">新闻列表</a>
+                <a class="menu-list" href="addNews">增加新闻</a>
+                <a class="menu-list current"  href="getquery">查询新闻</a>
+            </div>
+        </div>
+        <div class="main col-sm-11">
+            
+            
+            <!--查询新闻-->
+            <div class="select-news" id="menu3">
+                <span class="select-text col-sm-12">请选择查找条件:</span>
+                <form id="submitData" class="select" method="post" action="/news/query" >
+                    <div class="form-group">
+                        <label for="newskind" class="col-sm-2 select-word control-label">新闻类别:</label>
+                        <div class="col-sm-2">
+                            <select class="form-control" id="newskind" name="newstype">
+                                <option value="type1">推荐</option>
+                                <option value="type2">百家</option>
+                                <option value="type3">本地</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-1">
+                            <input class="btn btn-success" type="submit" value="提交">
+                        </div>
+                    </div>
+                </form>
+                <div class="select-result">
+                	<%  var dataInt=JSON.parse(data); %>
+		                <% for(var item in dataInt){ %>
+
+		                    <div class="page-list-item" news-id=<%= dataInt[item].id %> >
+		                        <div class="page-list-main">
+		                            <div class="page-list-img">
+		                                <img src="<%= dataInt[item].img %>">
+		                            </div>
+		                            <div class="page-list-text">
+		                                <div class="list-text-title"><%= dataInt[item].title %></div>
+		                                <div class="list-text-abs"><%= dataInt[item].content %></div>
+		                            </div>
+		                            <div class="page-list-bottom">
+		                                <div class="page-list-time">
+		                                    <b class="list-new-time"><%= dataInt[item].time %></b>
+		                                    <b class="update btn">修改</b>
+		                                    <b class="delete btn">删除</b>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+                
+                    
+                	<%  } %>
+
+
+
+
+                </div>
+            </div>
+            <!--弹出修改新闻窗口-->
+            <div class="mask">
+                <div class="update-news">
+                    <div class="update-title">关闭</div>
+                    <div class="update-content">
+                        <form id="updateData" class="form-horizontal" action="/updatenews" method="post">
+                            <div class="form-group">
+                                <label for="newsid" class="col-sm-2 control-label">新闻ID:</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control " name="newsid" id="updateid" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newskind" class="col-sm-2 control-label">新闻类别:</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control" id="updatekind" name="newstype">
+                                        <option value="type1">推荐</option>
+                                        <option value="type2">百家</option>
+                                        <option value="type3">本地</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newstitle" class="col-sm-2 control-label">新闻标题:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control " name="newstitle" id="updatetitle">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newsimg" class="col-sm-2 control-label">图片地址:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="newsimg" id="updateimg">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newscontent" class="col-sm-2 control-label">新闻内容:</label>
+                                <div class="col-sm-10">
+                                    <textarea type="text" rows="3" class="form-control" name="newscontent" id="updatecontent"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="newstime" class="col-sm-2 control-label">新闻时间:</label>
+                                <div class="col-sm-5">
+                                    <input type="date" class="form-control" name="newstime" id="updatetime">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-1">
+                                    <input class="btn btn-success" type="submit" value="提交">
+                                </div>
+                                <div class="col-sm-2">
+                                    <input class="btn btn-danger" type="reset" value="重置">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.form.js"></script>
+	<script type="text/javascript" src="/javascripts/news.js"></script>
+  </body>
+</html>
+
+   
