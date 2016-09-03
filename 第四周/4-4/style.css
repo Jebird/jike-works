@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.row-style {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.col-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}

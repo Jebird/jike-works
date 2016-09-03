@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320.1,minimum-scale=1.0,maximum-scale=1.0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/style.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="new-toolbar">
+            <div class="toolbar-left">
+                <div class="toolbar-btn btn-baidu"></div>
+                <div class="toolbar-btn btn-user"></div>
+            </div>
+            <div class="toolbar-right">
+                <div class="toolbar-btn btn-search"></div>
+                <div class="toolbar-btn btn-sub"></div>
+            </div>
+        </div>
+    </header>
+    <!-- 页面主体 -->
+    <div class="main-content">
+        <!--新闻导航-->
+        <div id="main-nav">
+            <div class="divider"></div>
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="newstype current" data-type="type1">推荐</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="newstype" data-type="type2">百家</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="newstype" data-type="type3">本地</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>图片</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>娱乐</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>社会</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="last-line">
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>军事</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>女人</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>搞笑</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>科技</span>
+                                </div>
+                            </td>
+                            <td colspan="2">
+                                <div>
+                                    <b></b>
+                                    <span>互联网</span>
+                                    <div class="more">
+                                        更多
+                                        <div class="down-angle angle"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>生活</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>国际</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>国内</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>体育</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>汽车</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>财经</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>房产</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>时尚</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>教育</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>游戏</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>旅游</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>人文</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td colspan="2">
+                                <div>
+                                    <b></b>
+                                    <span>创意</span>
+                                </div>
+                            </td>
+                            <td colspan="2">
+                                <div>
+                                    <b></b>
+                                    <span>互联网+</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="divider tail"></div>
+            <div class="footer" style="display: none;">
+                <div class="btn-group">
+                    <div class="reporter-rank">记者榜</div>
+                    <div class="media-rank">
+                        <b></b> 媒体榜
+                    </div>
+                    <div class="btn-manage">
+                        <b></b> 删除及排序
+                    </div>
+                </div>
+                <div class="less">
+                    收起
+                    <div class="up-angle angle"></div>
+                </div>
+            </div>
+        </div>
+        <!--新闻内容-->
+        <div id="main-sections">
+            <div class="main-page">
+                <div class="banner-container">
+                    <div class="banner-wrapper">
+                        <div class="banner-list">
+                            <div class="banner-item">
+                                <div class="item-box">
+                                    <div class="item-imgbox">
+                                        <img src="Images/news01.jpg">
+                                    </div>
+                                    <h4 class="item-title">
+                                    <span>金正恩视察洲际导弹及奇特球形核弹头</span>
+                                </h4>
+                                </div>
+                            </div>
+                            <div class="banner-item">
+                                <div class="item-box">
+                                    <div class="item-imgbox">
+                                        <img src="Images/news02.jpg">
+                                    </div>
+                                    <h4 class="item-title">
+                                    <span>四川官员勘察扶贫项目遇塌方 一行7人身亡</span>
+                                </h4>
+                                </div>
+                            </div>
+                            <div class="banner-item">
+                                <div class="item-box">
+                                    <div class="item-imgbox">
+                                        <img src="Images/news03.jpg">
+                                    </div>
+                                    <h4 class="item-title">
+                                    <span>多地现18年来最壮观"天狗食日"</span>
+                                </h4>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <!--banner按钮-->
+                        <div class="banner-icons">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 热点 -->
+                <div class="page-hotword">
+                    <div class="hotword-left">
+                        <span>热点</span>
+                    </div>
+                    <ul class="hotword-content">
+                        <li class="hotword-item">
+                            <span>女生节横幅</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>中国大熊猫入住韩国</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>南希·里根去世</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>毛新宇 提案</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>个税起征点</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>人大常委会报告</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>日全食</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>女性安检专用通道</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>习近平 湖南团审议</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>海昏侯珍宝</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                        <li class="hotword-item">
+                            <span>女生节横幅</span>
+                            <b class="hotword-item-right"></b>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 新闻卡片 -->
+                <div class="page-feed">
+                    <div class="page-list baijianews" style="display: none;">
+                    </div>
+                    <div class="page-list bendinews" style="display: none;">
+                    </div>
+                    <div class="page-list tuijiannews">
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist01.jpg">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">习近平出席会议听取慈善法草案说明</div>
+                                    <div class="list-text-abs">习近平出席会议听取慈善法草案说明</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">置顶</b>
+                                        <b class="list-new-time">10小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist02.JPEG&fm=36">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">再度回应制裁?朝鲜今晨向东部海域试射2枚导弹</div>
+                                    <div class="list-text-abs">当地时间周四上午10点左右，朝鲜从其东海岸向海上发射了数枚短程导弹。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">搜狐头条</b>
+                                        <b class="list-new-time">1分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">看看这六大独角兽创业公司2015年过得怎么样</div>
+                                </div>
+                                <div class="page-list-album-container">
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper one">
+                                            <img src="Images/newlist03.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper two">
+                                            <img src="Images/newlist04.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper three">
+                                            <img src="Images/newlist05.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="like-news top-blue">猜你喜欢</b>
+                                        <b class="list-new-time">4分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main moretext">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">谷歌宣布加入IT基础设施硬件开源项目OCP</div>
+                                    <div class="list-text-abs">它将加入Facebook于2011年创立的开放计算项目。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">8分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">经济学家巴曙松：一线城市房产政策存在收紧可能性</div>
+                                    <div class="list-text-abs">政策层面:大环境宽松，一线城市存在收紧可能性。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">12分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">黄守宏马建堂解读政府工作报告</div>
+                                    <div class="list-text-abs">分析2016年中国经济形势。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">16分钟</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist06.jpg&fm=36">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">王梦恕:高铁装WiFi会影响安全</div>
+                                    <div class="list-text-abs">最近一段时间，高铁是否应恢复350公里运行时速、提速是否安全的问题，受到普遍关注。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">网易要闻</b>
+                                        <b class="list-new-time">20分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">17岁学生众筹3万元为老家修路</div>
+                                </div>
+                                <div class="page-list-album-container">
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper one">
+                                            <img src="Images/newlist07.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper two">
+                                            <img src="Images/newlist08.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper three">
+                                            <img src="Images/newlist09.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">网易要闻</b>
+                                        <b class="list-new-time">24分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">跨境电商进口税调整政策望4月落地</div>
+                                    <div class="list-text-abs">作为外贸发展的新引擎，跨境电商今年无疑站上“风口”，政策利好也在不断释放。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">28分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">以史为鉴，本轮周期股上涨后的两种可能结局</div>
+                                    <div class="list-text-abs">强政策刺激下，A股出现牛市，周期股领涨，有色、建材、房地产、煤炭行业分别上涨268%、206%...</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">全球货币宽松政策料会继续维持</div>
+                                    <div class="list-text-abs">当地时间本周四，全球投资者较为关注的欧洲央行货币政策会议将如期举行。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist10.jpg">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">Facebook收购热门换脸应用</div>
+                                    <div class="list-text-abs">Masquerade是苹果软件商店中最热门的换脸工具之一，日前Facebook已经收购了该公司...</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist11.jpg">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">韩媒：朝鲜试射2枚短程导弹</div>
+                                    <div class="list-text-abs">当地时间周四上午10点左右，朝鲜从其东海岸向海上发射了数枚短程导弹。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">腾讯要闻</b>
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist12.jpg&fm=36">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">上海调研楼市或将现最严调控</div>
+                                    <div class="list-text-abs">上海的房价波动已经传导到周边多个城市，上海出台更严调控为时并不晚。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">网易头条</b>
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">百度NLP技术竞赛开启未来搜索新方式 引爆你的想象力</div>
+                                    <div class="list-text-abs">NLP正在升级成为全新的“人类信息识别和需求理解技术”。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">徐冠巨：呼吁“互联网＋”走向生产端</div>
+                                    <div class="list-text-abs">互联网在消费端的服务应用，可以说已经进入了世界先进水平，但生产端的应用水平很低，是互联网发力的...</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">百度携手CCF共同举办实体搜索竞赛 演绎人才挖掘双赢模式</div>
+                                    <div class="list-text-abs">技术是百度的基因，NLP是智能搜索引擎的技术之本，它赋予了百度技术“智能化”的基因。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">人社部部长尹蔚民：延迟退休真的要来了 </div>
+                                    <div class="list-text-abs">尽管9日的部长通道上群星闪耀，但人社部部长尹蔚民却因延迟退休和就业两个热点话题而成为当天的最热...</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist13.jpg&fm=36">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">小伙应聘司机却被安排去收债</div>
+                                    <div class="list-text-abs">没想到，说好的当司机，却变成了去收债，公司还拒退押金，这让成都小伙邓伟哭笑不得。</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">网易要闻</b>
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-text">
+                                    <div class="list-text-title">刘诗诗婚纱照珠宝价值72万！</div>
+                                </div>
+                                <div class="page-list-album-container">
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper one">
+                                            <img src="Images/newlist15.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper two">
+                                            <img src="Images/newlist16.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                    <div class="page-list-album">
+                                        <div class="page-list-album-wrapper three">
+                                            <img src="Images/newlist17.jpg&fm=36">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="top-news top-red">网易要闻</b>
+                                        <b class="list-new-time">24分钟前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-list-item">
+                            <div class="page-list-main showleft">
+                                <div class="page-list-img">
+                                    <img src="Images/newlist14.jpg">
+                                </div>
+                                <div class="page-list-text">
+                                    <div class="list-text-title">土豪不愁，总理报告给草根创业者的十大商机</div>
+                                    <div class="list-text-abs">李克强总理在政府工作报告中提出了“大众创业、万众创新”的口号，振奋了无数有志青年，掀起了全国创...</div>
+                                </div>
+                                <div class="page-list-bottom">
+                                    <div class="page-list-time">
+                                        <b class="list-new-time">1小时前</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<!--点击加载更多-->
+
+                </div>
+                <div class="refresh-wrapper">
+                    <div class="refresh">点击加载更多</div>
+                </div>
+
+            </div>
+
+        </div>
+		<!--底部-->
+        <div id="main-footer">
+            <div class="footer-list">
+                <div class="item-wrapper">
+                <div class="foot-item feedback">意见反馈</div>
+                    
+                </div>
+                <div class="item-wrapper">
+                <div class="foot-item app-recommend">应用推荐</div>
+                    
+                </div>
+                <div class="item-wrapper">
+                <div class="foot-item app-download">客户端</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="Scripts/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="Scripts/function.js"></script>
+
+</html>

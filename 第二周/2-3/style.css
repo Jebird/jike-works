@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+header{
+    width: 530px;
+    height: 50px;
+    position: relative;
+    float: right;
+}
+
+ .nav {
+    float: left;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+li a {
+    color: #333;
+    font-size: 13px;
+}
+
+.strong a:hover {
+    color: blue;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+#more {
+    width: 60px;
+    height: 23px;
+    padding-top: 5px;
+}
+
+#more a {
+    line-height: 23px;
+    display: block;
+    color: #fff;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    text-decoration: none;
+}
+
+#morethings {
+    width: 76px;
+    height: 633px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    display: none;
+    z-index: 99;
+}
+
+.moreone {
+    height: 53px;
+    line-height: 50px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.moreone a{
+  color: #666666;
+  text-decoration: none;
+}
+
+.morescroll span {
+    width: 36px;
+    height: 36px;
+    display: block;
+    overflow: hidden;
+    margin: 10px auto 5px;
+    background: url("images/icons.png") no-repeat;
+}
+
+.morescroll a {
+    width: 66px;
+    height: 66px;
+    display: block;
+    font-size: 13px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #666666;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+span.music {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+span.image {
+    width: 36px;
+    background-position: -112px 0;
+}
+
+span.know {
+    width: 36px;
+    background-position: -36px 0;
+}
+
+span.wenku {
+    width: 36px;
+    background-position: -148px 0;
+}
+
+span.state {
+    width: 36px;
+    background-position: -184px 0;
+}
+
+span.spread {
+    width: 36px;
+    background-position: -220px 0;
+}
+
+.all a {
+    font-size: 11px;
+    color: #666666;
+    border: 0px;
+    padding-top: 10px;
+}
+
+.main {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    clear: both;
+}
+
+.img {
+    width: 280px;
+    height: 135px;
+    margin: 0 auto 35px;
+}
+
+.bdsu {
+    width: 680px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.bdsu_input,
+.bdsu_buttton {
+    float: left;
+}
+
+.s_ipt {
+    width: 540px;
+    height: 35px;
+    border: 1px solid #BABEBF;
+}
+
+.s_btn {
+    width: 100px;
+    height: 37px;
+    color: white;
+    font-size: 15px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    cursor: pointer;
+}
+
+footer{
+    width: 800px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.mobile_bd {
+    width: 170px;
+    height: 100px;
+    margin-left: 50px;
+    float: left;
+}
+
+.mobile_img {
+    float: left;
+}
+
+.mobile_text {
+    margin-left: 20px;
+    margin-top: 15px;
+    float: left;
+    color: #999;
+    line-height: 23px;
+    font-size: 13px;
+}
+
+.mobile_text {
+    color: #4C4C4C;
+}
+
+.nuomi_bd {
+    width: 170px;
+    height: 100px;
+    float: left;
+}
+
+.mobile_img {
+    float: left;
+}
+
+.nuomi_text {
+    margin-left: 75px;
+    margin-top: -50px;
+    float: left;
+    color: #999;
+    line-height: 23px;
+    font-size: 13px;
+}
+
+.nuomi_text b {
+    color: #4C4C4C;
+}
+
+.footContent {
+    float: left;
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.home_bd a {
+    color: #272727;
+    padding-left: 15px;
+}
+
+.cp {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #666;
+}
+
+.cp a {
+    color: #666;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>十字架</title>
+    <style type="text/css">
+    /*十字架页面实现水平居中垂直居中*/
+    
+    .container {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -150px 0 0 -150px;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+    }
+    /*旋转动画效果*/
+    
+    @-webkit-keyframes rotate {
+        0% {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+        25% {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+        }
+        50% {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+        75% {
+            -webkit-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+    }
+    /*十字架上部*/
+    
+    .top {
+        width: 100px;
+        height: 100px;
+        background-color: #5ca7ba;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+    }
+    /*十字架左中右部分*/
+    
+    .main {
+        width: 300px;
+        height: 100px;
+        float: left;
+    }
+    /*十字架左部*/
+    
+    .left {
+        width: 100px;
+        height: 100px;
+        background-color: #fcaebb;
+        float: left;
+        border-radius: 20px;
+        -o-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        -moz-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        -webkit-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+    }
+    /*十字架中部*/
+    
+    .center {
+        width: 100px;
+        height: 100px;
+        z-index: 1;
+        background-color: #ff425d;
+        float: left;
+        border-radius: 20px;
+    }
+    /*图片icon*/
+    
+    .icon {
+        width: 24px;
+        height: 24px;
+        z-index: 99;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -12px 0 0 -12px;
+    }
+    /*十字架右部*/
+    
+    .right {
+        width: 100px;
+        height: 100px;
+        background-color: #93e0ff;
+        float: left;
+        border-radius: 20px;
+        -o-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        -moz-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        -webkit-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+    }
+    /*十字架下部*/
+    
+    .down {
+        width: 100px;
+        height: 100px;
+        background-color: #c7ede9;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        border-radius: 20px;
+        -o-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        -moz-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        -webkit-box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, .3);
+    }
+    </style>
+</head>
+
+<body>
+    <!--十字架页面主体-->
+    <div class="container">
+        <!--十字架上部-->
+        <div class="top">
+        </div>
+        <!--十字架左中右部分-->
+        <div class="main">
+            <!--十字架左部-->
+            <div class="left">
+            </div>
+            <!--十字架中部-->
+            <div class="center">
+                <!--十字架中心icon-->
+                <div class="icon">
+                    <img src="icon.png" />
+                </div>
+            </div>
+            <!--十字架右部-->
+            <div class="right">
+            </div>
+        </div>
+        <!--十字架底部-->
+        <div class="down">
+        </div>
+    </div>
+</body>
+
+</html>

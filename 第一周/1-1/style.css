@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Helvetica","Arial",sans-serif;
+}
+#head{
+    width:530px;
+    height: 50px;
+    position: relative;
+    float: right;
+}
+.nav{
+    float: left;
+}
+ul li{
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    margin-left: 20px;
+}
+li a{
+    color: #333;
+    font-size: 13px;
+}
+li a:hover{
+    color: blue;
+}
+.strong{
+    font-weight: bold;
+}
+.more{
+    padding-top: 5px;
+}
+.more a{
+    width: 60px;
+    height:23px;
+    line-height: 23px;
+    display: block;
+    color: #fff;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    text-decoration: none;
+}
+#main{
+    width:800px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    clear:both;
+    margin: 0 auto;
+}
+img{
+    margin-bottom: 35px;
+}
+#bdsu{
+    width: 680px;
+    height: 100px;
+}
+.s_ipt{
+    width: 540px;
+    height: 35px;
+    margin-left: 40px;
+
+
+}
+.s_btn{
+    width: 100px;
+    height: 41px;
+    margin-left: -8px;
+    position: absolute;
+    left:640px;
+    color: white;
+    font-size: 15px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    cursor: pointer;
+}
+#foot{
+    width: 800px;
+    height:300px;
+    margin: 0 auto;
+}
+.mobile_bd{
+    width: 170px;
+    height: 100px;
+    margin-left: 100px;
+    float: left;
+}
+.mobile_img{
+    float: left;
+}
+.mobile_text{
+    margin-left: 20px;
+    margin-top: 15px;
+    float: left;
+    color:#999;
+    line-height:23px;
+    font-size: 13px;
+}
+.mobile_text{
+    color:#4C4C4C;
+}
+.nuomi_bd{
+    width: 170px;
+    height: 100px;
+    float:left;
+}
+.mobile_img{
+    float: left;
+}
+.nuomi_text{
+    margin-left: 70px;
+    margin-top: -85px;
+    float: left;
+    color:#999;
+    line-height:23px;
+    font-size: 13px;
+}
+.nuomi_text b{
+    color:#4C4C4C;
+}
+#footContent{
+    float: left;
+    font-size: 13px;
+    padding-top: 15px;
+}
+#home_bd a{
+    color:#272727;
+    padding-left: 15px;
+}
+#cp{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #666;
+}
+#cp a{
+    color: #666;
+}
+

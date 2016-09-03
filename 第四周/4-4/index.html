@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>初级前端攻城狮面试题</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>初级前端攻城狮面试题</h1>
+        <div class="row row-style">
+            <p class="col-title">1、对WEB标准以及W3C的理解与认识?</p>
+            <div class="row">
+                <div class="col-md-12">标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链CSS和JS脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性。</div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">2、XHTML和HTML有什么区别?</p>
+            <div class="row">
+                <div class="col-md-12">HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言。
+                    <br> 最主要的不同：
+                    <br> XHTML 元素必须被正确地嵌套。
+                    <br> XHTML 元素必须被关闭。
+                    <br> 标签名必须用小写字母。
+                    <br> XHTML 文档必须拥有根元素。
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">3、Doctype作用? 严格模式与混杂模式区分?区分它们有何意义?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ol>
+                        <li>
+                            <!DOCTYPE> 声明位于文档中的最前面，处于 <code>&lt;html&gt;</code> 标签之前。告知浏览器的解析器，用什么文档类型、规范来解析这个文档。</li>
+                        <li>严格模式的排版和JS运作模式是以该浏览器支持的最高标准运行。</li>
+                        <li>在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。</li>
+                        <li>DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">4、行内元素有哪些?块级元素有哪些?空(void)元素有那些?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ol>
+                        <li>CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，比如div默认display属性值为“block”，成为“块级”元素；span默认display属性值为“inline”，是“行内”元素。</li>
+                        <li>行内元素有：a、b、span、img、input、select、strong（强调的语气） 块级元素有：div、ul、ol、li、dl、dt、dd、h1、h2、h3、h4…p </li>
+                        <li>知名的空元素:<code>&lt;br&gt;</code>、<code>&lt;hr&gt;</code>、<code>&lt;img&gt;</code>、<code>&lt;input&gt;</code>、<code>&lt;link&gt;</code>、<code>&lt;meta&gt;</code><br>
+                        鲜为人知的是:<code>&lt;area&gt;</code>、<code>&lt;base&gt;</code>、<code>&lt;col&gt;</code>、<code>&lt;command&gt;</code>、<code>&lt;embed&gt;</code>、<code>&lt;ketgen&gt;</code>、<code>&lt;param&gt;</code>、<code>&lt;source&gt;</code>、<code>&lt;track&gt;</code>、<code>&lt;wbr&gt;</code>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">5、CSS引入的方式有哪些? link和@import的区别是?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ol>
+                        <li>方式：内联、内嵌、外链、导入。</li>
+                        <li>link属于XHTML标签，而@import是CSS提供的;</li>
+                        <li>页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;</li>
+                        <li>import只在IE5以上才能识别，而link是XHTML标签，无兼容问题;</li>
+                        <li>link方式的样式的权重 高于@import的权重。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">6、CSS 选择符有哪些?哪些属性可以继承?优先级算法如何计算?CSS3新增伪类有那些？</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>
+                            <ol>
+                                <li>ID选择器（#myid）</li>
+                                <li>类选择器（.myclassname）</li>
+                                <li>标签选择器（div,h1,p）</li>
+                                <li>相邻选择器（h1+p）</li>
+                                <li>子选择器（ul>li） </li>
+                                <li>后代选择器（li a）</li>
+                                <li>通配符选择器（*）</li>
+                                <li>属性选择器（a[rel="external"]）</li>
+                                <li>伪类选择器（a:hover,li:nth-child）</li>
+                            </ol>
+                        </li>
+                        <li>可继承的样式：font-size、font-family、color、ul、li、dl、dd、dt;</li>
+                        <li>不可继承的样式：border、padding、margin、width、height;  </li>
+                        <li>优先级就近原则，同权重情况下样式定义最近者为准;</li>
+                        <li>载入样式以最后载入的定位为准;</li>
+                        <li>优先级为:
+                            <ol>
+                                <li>!important>ID>class>tag;</li>
+                                <li>!important比内联优先级高</li>
+                            </ol>
+                        </li>
+                        <li>
+                            CSS3新增伪类举例:
+                            <ol>
+                                <li>p:first-of-type 选择属于其父元素的首个<code>&lt;p&gt;</code>元素的每个<code>&lt;p&gt;</code>元素。 </li>
+                                <li>p:last-of-type 选择属于其父元素的最后<code>&lt;p&gt;</code>元素的每个<code>&lt;p&gt;</code>元素。</li>
+                                <li>p:only-of-type 选择属于其父元素唯一的<code>&lt;p&gt;</code>元素的每个<code>&lt;p&gt;</code>元素。</li>
+                                <li>p:only-child 选择属于其父元素的唯一子元素的每个<code>&lt;p&gt;</code>元素。</li>
+                                <li>p:nth-child(2) 选择属于其父元素的第二个子元素的每个<code>&lt;p&gt;</code>元素。</li>
+                                <li>enabled:disabled 控制表单控件的禁用状态。</li>
+                                <li>checked:单选框或复选框被选中。</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">7、列出display的值，说明他们的作用。position的值、relative和absolute定位原点是?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ol>
+                        <li>
+                            <ul>
+                                <li>block:像块类型元素一样显示。</li>
+                                <li>none:缺省值。像行内元素类型一样显示。</li>
+                                <li>inline-block:像行内元素一样显示，但其内容象块类型元素一样显示。</li>
+                                <li>list-item:像块类型元素一样显示，并添加样式列表标记。</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>absolute:生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。</li>
+                                <li>fixed:（老IE不支持）生成绝对定位的元素，相对于浏览器窗口进行定位。</li>
+                                <li>relative:生成相对定位的元素，相对于其正常位置进行定位。</li>
+                                <li>static:默认值。没有定位，元素出现在正常的流中</li>
+                                <li>（忽略top,bottom,left,right,z-index声明）</li>
+                                <li>inherit:规定从父元素继承position属性的值。</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">8、CSS3有哪些新特性?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ol>
+                        <li>CSS3实现圆角（border-radius:8px）、阴影（box-shadow:10px）;</li>
+                        <li>对文字加特效（text-shadow），线性渐变（gradient），旋转（transform）;</li>
+                        <li>ransform:rotate(9deg)、scale(0.85,0.90)、translate(0px,-30px)、skew(-9deg,0deg);//旋转,缩放,定位,倾斜;</li>
+                        <li>增加了更多的CSS选择器、多背景、rgba。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">9、你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>IE：trident内核;</li>
+                        <li>Firefox:Gecko内核;</li>
+                        <li>Safari:webkit内核;</li>
+                        <li>Chorm:Blink(基于webkit，Google与Opera Software共同开发;</li>
+                        <li>Opear:以前是presto内核，Opera现已改用Google Chrome的Blink内核</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">10、写出几种IE6 BUG的解决方法</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ol>
+                        <li>PNG24位的图片在IE6浏览器上出现背景，解决方案是做成PNG8;</li>
+                        <li>双边距BUG,由float引起的:使用display;</li>
+                        <li>3像素问题:使用float引起的,使用dislpay:inline -3px;</li>
+                        <li>超链接hover 点击后失效: 使用正确的书写顺序:link visited hover active;</li>
+                        <li>IE z-index问题: 给父级添加position:relative;</li>
+                        <li>min-height最小高度: 使用!important 解决;</li>
+                        <li>select 在IE6下遮盖: 使用iframe嵌套;</li>
+                        <li>为什么没有办法定义1px左右的宽度容器:(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px);</li>
+                        <li>IE6 不支持!important。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">11、img标签上title与alt属性的区别是什么?strong与em的异同？</p>
+            <div class="row">
+                <div class="col-md-12">alt:当图片不显示时用文字代表；title:为该属性提供信息。strong:粗体强调标签，强调，表示内容的重要性；em:斜体强调标签，更强烈强调，表示内容的强调点
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">12、描述CSS reset的作用和用途。</p>
+            <div class="row">
+                <div class="col-md-12">reset重置浏览器的css默认属性,因为浏览器的品种不同，样式不同，然后重置，让他们统一。
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">13、解释CSS Sprites，如何使用?</p>
+            <div class="row">
+                <div class="col-md-12">CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的“background-image”，“background- repeat”，“background-position”的组合进行背景定位，background-position可以用数字能精确的定位出背景图片的位置。这样可以减少很多图片请求的开销，因为请求耗时比较长；请求虽然可以并发，但是也有限制，一般浏览器都是6个。对于未来而言，就不需要这样做了，因为有了`http2`。
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">14、浏览器标准模式和怪异模式之间的区别是什么?</p>
+            <div class="row">
+                <div class="col-md-12">盒子模型 渲染模式的不同 使用 window.top.document.compatMode 可显示为什么模式
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">15、你如何对网站的文件和资源进行优化?期待的解决方案包括：</p>
+            <div class="row">
+                <div class="col-md-12">文件合并、文件最小化、文件压缩、使用CDN托管、缓存的使用
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">16、如何区分:DOCTYPE声明、新增的结构元素、功能元素，语义化的理解?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>用正确的标签做正确的事情！</li>
+                        <li>html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；</li>
+                        <li>在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。</li>
+                        <li>搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于SEO。</li>
+                        <li>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">17、清除浮动的几种方式，各自的优缺点</p>
+            <div class="row">
+                <div class="col-md-12">
+                    1.使用空标签清除浮动 clear:both(理论上能清楚任何标签，增加无意义的标签)
+                    <br> 2.使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE)
+                    <br> 3.是用afert伪元素清除浮动(用于非IE浏览器)
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">18、CSS hack</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <pre>
+                    <code>&lt;!--[if IE 6]&gt;</code>
+                    这段文字只在IE6浏览器显示
+                     <code>&lt;![end if]--&gt;</code>
+                    _marging \\IE 6
+                    +margin \\IE 7
+                    marging:0 auto \9; \\IE6/IE7/IE8/IE9/IE10都生效
+                    margin: \0 \\IE8/IE9/IE10都生效，是IE8/9/10的hack
+                    margin:  \9\0 \\只对IE9/IE10生效，是IE9/10的hack
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">19、你能描述一下渐进增强和优雅降级之间的不同吗?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
+                    <br> 优雅降级 graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。
+                    <br> 区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">20、HTML5有哪些新特性?移除了那些元素？</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。</li>
+                        <li>绘画 canvas
+                            <ul>
+                                <li>用于媒介回放的 video 和 audio 元素 </li>
+                                <li>本地离线存储 LocalStorage 长期存储数据，浏览器关闭后数据不丢失；</li>
+                                <li>SessionStorage 的数据在浏览器关闭后自动删除</li>
+                                <li>语意化更好的内容元素，比如 article、footer、header、nav、section</li>
+                                <li>表单控件，calendar、date、time、email、url、search</li>
+                                <li>新的技术webworker, websockt, Geolocation</li>
+                            </ul>
+                        </li>
+                        <li>移除的元素</li>
+                        <ul>
+                            <li>纯表现的元素：basefont，big，center，font, s，strike，tt，u;</li>
+                            <li>对可用性产生负面影响的元素：frame，frameset，noframes；</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">20、请谈一下你对网页标准和标准制定机构重要性的理解。</p>
+            <div class="row">
+                <div class="col-md-12">
+                    网页标准和标准制定机构都是为了能让web发展的更‘健康’，开发者遵循统一的标准，降低开发难度，开发成本，SEO也会更好做，也不会因为滥用代码导致各种BUG、安全问题，最终提高网站易用性。
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">20、 简述一下src与href的区别。</p>
+            <div class="row">
+                <div class="col-md-12">
+                    src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。 src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。
+                    <br>
+                    <code>&lt;script src ="js.js"&gt;&lt;script&gt;</code>
+                    <br> 当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。
+                    <br> &nbsp;&nbsp;href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，如果我们在文档中添加
+                    <br>
+                    <code>&lt;link href="common.css" rel="stylesheet"&gt;</code>
+                    <br> 那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。 安全问题，最终提高网站易用性。
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">21、介绍一下CSS的盒子模型?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>有两种:IE盒子模型、标准W3C盒子模型；IE的content部分包含了border和padding;</li>
+                        <li>盒模型:内容(content)、填充(padding)、边界(margin)、边框(border).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row-style">
+            <p class="col-title">22、如何居中一个浮动元素?</p>
+            <div class="row">
+                <div class="col-md-12">
+                    确定容器的宽高;
+                    <br> 假设一个宽500px、高300px的层;
+                    <br> 设置层的外边距
+                    <br>
+                    <pre>
+            .div{  
+                width:500px  
+                height:300px;//高度可以不设   
+                margin: -150px 0 0 -250px;   
+                position:relative;相对定位 
+                background-color:pink;//方便看效果   
+                left:50%;  
+                top:50%;
+                } 
+            </pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

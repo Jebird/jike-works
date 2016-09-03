@@ -1,0 +1,93 @@
+body {
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+img {
+    float: left;
+}
+
+.line {
+    height: 20px;
+    margin-top: 7px;
+    width: 0px;
+    display: inline-block;
+    float: left;
+    border: 2px solid #ffffff;
+}
+
+h5 {
+    line-height: 20px;
+}
+.login-title{
+    text-align: center;
+}
+.container h1 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+form input {
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input::-webkit-input-placeholder {
+    color: white !important;
+}
+
+
+
+.form-group {
+    width: 250px;
+    margin: 0 auto 10px auto;
+}
+
+.checkbox {
+    max-width: 450px;
+    padding-left: 40px;
+}
+
+.forget {
+    line-height: 3em;
+}
+
+form button {
+    width: 110px;
+}
+
+.btn {
+    color: #00A5FF;
+    border-radius: 3px;
+    font-size: 18px;
+    border: 0;
+    background-color: white;
+    margin-left: 7px;
+    width: 110px;
+}
+
+.text-center {
+    height: 50px;
+    margin-top: 50px;
+}
